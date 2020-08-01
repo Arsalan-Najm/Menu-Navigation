@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "montserrat",sans-serif;
+}
+body {
+	background: #f9f9f9;
+}
+.header {
+	height: 100px;
+	background: #263145;
+	color: #fff;
+	padding: 0 20px;
+}
+.header .logo {
+	line-height: 100px;
+	float: left;
+	user-select: none;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: 900;
+}
+.show-nav {
+	float: right;
+	margin-top: 30px;
+	display: none;
+}
+.nav div {
+	width: 40px;
+	height: 5px;
+	margin: 5px 0;
+	border-radius: 10px;
+	background: #fff;
+	transition: .4s;
+}
+.nav .one {
+	width: 45px;
+}
+.nav .two {
+	width: 20px;
+}
+
+.nav .three {
+	width: 30px;
+}
+.nav:hover div {
+	width: 45px;
+	background: #3887fe;
+}
+.hide-nav {
+	transition: .4s;
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+.menu {
+	float: right;
+	line-height: 100px;
+}
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 10px;
+	transition: .4s;
+}
+.menu a:hover,
+.hide-nav:hover {
+	color: #3887fe
+}
+.content {
+	padding: 0 20px;
+}
+.content img {
+	width: 100%;
+	max-width: 700px;
+	margin: 20px 0;
+}
+.content p {
+	text-align: justify;
+}
+@media screen and (max-width: 800px) {
+	.show-nav {
+		display: block;
+	}
+	.menu {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		padding: 40px 0;
+		width: 100%;
+		height: 100vh;
+		background: #263145;
+		transition: .4s;
+	}
+	.menu a {
+		display: block;
+		text-align: center;
+	}
+	.hide-nav {
+		display: block;
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+}
